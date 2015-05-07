@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Replace CSS to inline</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<style type="text/css">
+		body{
+			background: #FEFEFE;
+		}
+	</style>
+</head>
+<body>
+<textarea class="input-html" rows="20" cols="30"></textarea>
+<button class="btn-convert-to-inline">Convert to inline</button>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('.btn-convert-to-inline').click(function(){
+		
+		var txtArea = $('.input-html').val();
+		var htmlNodes = $.parseHTML(txtArea);
+		$.each(htmlNodes, function(i, node){
+			if (node.tagName == 'STYLE'){
+				console.log(node.textContent);
+			};
+		})
+	})
+})
+</script>
+</body>
+</html>
