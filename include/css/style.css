@@ -1,0 +1,44 @@
+.loading-gif {
+	background-image: url('../img/loader.gif');
+	background-position: center 50%;
+	height:15px;
+	background-repeat: no-repeat;
+}
+
+.center{
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.left {
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+div>small{
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+  color: rgba(46, 58, 71, 0.75);
+  letter-spacing: 0;
+}
+
+.text-areas{
+	margin: 0 auto;
+}
+
+#input-html, .output-html{
+	width: 500px; 
+	height: 300px; 
+	margin:0 10px;
+}
